@@ -8,7 +8,7 @@ import pruebaAutomatizacion.usersinterface.PaginaPracticaAutomatizacion;
 
 public class Abrir implements Task {
 
-    private PaginaPracticaAutomatizacion paginaBancolombia;
+    private PaginaPracticaAutomatizacion paginaPracticaAutomatizacion;
 
     public static Abrir laPagina(){
 
@@ -19,7 +19,7 @@ public class Abrir implements Task {
     @Override
     public <T extends Actor> void performAs(T actor){
 
-        actor.attemptsTo(Open.browserOn(paginaBancolombia));
+        actor.attemptsTo(Open.browserOn(paginaPracticaAutomatizacion));
 
     }
 
